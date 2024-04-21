@@ -1,1 +1,1 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/node:20.10.0-alpine
+FROM dockerregistry.com/base/node:20.10.0-alpine

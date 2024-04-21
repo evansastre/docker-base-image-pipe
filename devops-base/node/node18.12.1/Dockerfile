@@ -1,1 +1,1 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/node:18.12.1
+FROM dockerregistry.com/base/node:18.12.1

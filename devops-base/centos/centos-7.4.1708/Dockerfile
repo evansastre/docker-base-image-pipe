@@ -1,5 +1,5 @@
 #FROM centos:7.4.1708
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/centos:7.4.1708
+FROM dockerregistry.com/office-base/centos:7.4.1708
 
 # repo epel from aliyun
 RUN yum -y update \

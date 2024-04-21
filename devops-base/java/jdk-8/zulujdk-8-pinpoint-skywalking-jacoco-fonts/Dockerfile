@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/zulujdk-8:3.8.8-jacoco-example2
+FROM dockerregistry.com/office-base/zulujdk-8:3.8.8-jacoco-example2
 
 ARG gitlab_package_registry_docker_base_1443_token
 

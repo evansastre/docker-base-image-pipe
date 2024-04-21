@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/amazonlinux:2023-example2
+FROM dockerregistry.com/office-base/amazonlinux:2023-example2
 
 RUN pip3 install kubernetes==21.7.0 \
     && pip3 install boto3==1.28.40

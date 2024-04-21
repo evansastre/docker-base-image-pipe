@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/alinux3:230602.1-example2
+FROM dockerregistry.com/base/alinux3:230602.1-example2
 
 ENV LANG C.UTF-8
 ENV JAVA_HOME /opt/zing/zing-jdk17.0.0-23.08.201.0-1-x86_64/

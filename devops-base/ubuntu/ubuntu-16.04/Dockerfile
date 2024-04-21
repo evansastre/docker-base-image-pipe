@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/ubuntu:16.04
+FROM dockerregistry.com/office-base/ubuntu:16.04
 
 
 RUN apt-get update -y && \

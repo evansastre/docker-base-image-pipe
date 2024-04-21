@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/alinux3:230602.1-example1
+FROM dockerregistry.com/base/alinux3:230602.1-example1
 
 ## add java 11
 RUN yum install -y java-11 jq curl wget git

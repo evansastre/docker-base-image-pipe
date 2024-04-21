@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/ubuntu:22.04
+FROM dockerregistry.com/base/ubuntu:22.04
 
 
 # RUN apt-get update -y && \

@@ -1,1 +1,1 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/megalinter:v7
+FROM dockerregistry.com/office-base/megalinter:v7

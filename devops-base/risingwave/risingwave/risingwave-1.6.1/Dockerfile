@@ -1,2 +1,2 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/risingwavelabs/risingwave:v1.6.1
+FROM dockerregistry.com/office-base/risingwavelabs/risingwave:v1.6.1
 

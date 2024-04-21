@@ -1,1 +1,1 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/cilium/certgen:v0.1.9
+FROM dockerregistry.com/office-base/cilium/certgen:v0.1.9

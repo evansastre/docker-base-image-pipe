@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/kaniko-executor:debug-v1
+FROM dockerregistry.com/office-base/kaniko-executor:debug-v1
 
 ARG gitlab_package_registry_docker_base_1443_token
 

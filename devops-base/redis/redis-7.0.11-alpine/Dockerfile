@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/redis:7.0.11-alpine
+FROM dockerregistry.com/office-base/redis:7.0.11-alpine
 RUN apk update
 RUN apk add python3
 RUN apk add py3-pip

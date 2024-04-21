@@ -1,7 +1,7 @@
 # FROM office-registry.cn-hongkong.cr.aliyuncs.com/office-base/centos:7.4.1708
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/alinux3:230602.1-example2
-# FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/alinux3:230602.1-example1
-# FROM online-registry.cn-hongkong.cr.aliyuncs.com/base/alinux3:230602.1-example1
+FROM dockerregistry.com/base/alinux3:230602.1-example2
+# FROM dockerregistry.com/office-base/alinux3:230602.1-example1
+# FROM online-dockerregistry.com/base/alinux3:230602.1-example1
 ARG JOB_TOKEN
 
 ENV PATH="/usr/local/python3/bin:${PATH}"

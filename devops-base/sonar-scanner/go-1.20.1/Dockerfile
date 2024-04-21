@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/go:1.20.1.linux-amd64-example1
+FROM dockerregistry.com/base/go:1.20.1.linux-amd64-example1
 
 ARG JOB_TOKEN
 

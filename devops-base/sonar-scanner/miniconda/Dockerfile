@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/alinux3:230602.1-example2
+FROM dockerregistry.com/base/alinux3:230602.1-example2
 
 ARG JOB_TOKEN
 ARG USERNAME=admin

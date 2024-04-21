@@ -1,1 +1,1 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/justb4/jmeter:5.5
+FROM dockerregistry.com/base/justb4/jmeter:5.5

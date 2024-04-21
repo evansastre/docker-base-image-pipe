@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/amazonlinux:2023
+FROM dockerregistry.com/office-base/amazonlinux:2023
 
 RUN yum install zip -y \
     && yum install python3-pip -y \

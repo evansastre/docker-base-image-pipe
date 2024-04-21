@@ -1,4 +1,4 @@
-FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/office-base/node:20.11.1
+FROM dockerregistry.com/office-base/node:20.11.1
 
 ARG JOB_TOKEN
 # 安装 sonar-scanner-cli

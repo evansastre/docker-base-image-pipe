@@ -1,0 +1,58 @@
+include:
+  - project: ci-library
+    ref: master
+    file: ci-library.yml
+
+variables:
+  ENVIRONMENT_NAME: "docker_base" 
+
+# ======
+default:
+  tags:
+    - Global-shared
+    - Test
+
+stages: 
+  - build_docker
+
+
+{{- range .Values.Dockerfiles }}
+
+kaniko-{{ .image_name }}-{{ .image_tag }}: 
+  extends: .kaniko
+  variables:
+  ## Image information
+    DOCKERFILE_PATH: {{ .Dockerfile_dir }}/{{ .Dockerfile }}
+    IMAGE_NAME: "{{ .image_name }}"
+    IMAGE_TAG: "{{ .image_tag }}"
+    IMAGE_SPACE: {{ default "office-base" .image_space }}
+  # if image_space not define, then offline default ns is office-base, if image_space define then align with it (online one)
+  rules:
+    - changes:
+        paths:
+          - {{ .Dockerfile_dir }}/*
+        compare_to: master
+
+{{ if and (.image_space) (ne .image_space "null") }}
+kaniko-{{ .image_name }}-{{ .image_tag }}_prod: 
+  extends: .kaniko_prod
+  variables:
+  ## Image information
+    DOCKERFILE_PATH: {{ .Dockerfile_dir }}/{{ .Dockerfile }}
+    IMAGE_NAME: "{{ .image_name }}"
+    IMAGE_TAG: "{{ .image_tag }}"
+    IMAGE_SPACE: {{ .image_space }}
+  rules:
+    - changes:
+        paths:
+          - {{ .Dockerfile_dir }}/*
+        compare_to: master
+      when: manual
+      allow_failure: true
+{{ end }}
+
+{{- end }}
+
+
+
+

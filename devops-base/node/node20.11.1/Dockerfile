@@ -1,0 +1,1 @@
+FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/node:20.11.1

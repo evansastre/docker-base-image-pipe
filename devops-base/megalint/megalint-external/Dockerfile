@@ -1,0 +1,1 @@
+FROM oxsecurity/megalinter:v7

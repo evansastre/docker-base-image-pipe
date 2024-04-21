@@ -1,0 +1,1 @@
+FROM justb4/jmeter:5.5

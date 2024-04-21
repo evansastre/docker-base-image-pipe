@@ -1,0 +1,28 @@
+stages:
+  - generate
+  - trigger
+
+workflow:
+  rules:
+    - if: '$CI_MERGE_REQUEST_ID'
+
+default:
+  tags:
+    - Global-shared
+    - Test
+
+generate_pipeline:
+  stage: generate
+  script: 
+    - .gitlab/gitlab-ci-generator/generator_dynamic.sh 
+  artifacts:
+    paths:
+      - .gitlab-ci-generate.yml
+
+trigger_pipeline:
+  stage: trigger
+  trigger:
+    include: 
+      - job: generate_pipeline
+        artifact: .gitlab-ci-generate.yml
+    strategy: depend

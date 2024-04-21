@@ -1,0 +1,1 @@
+FROM bitnami/minio:2023.7.18-debian-11-r0

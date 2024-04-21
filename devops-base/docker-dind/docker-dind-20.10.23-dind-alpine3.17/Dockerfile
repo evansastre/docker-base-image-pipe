@@ -1,0 +1,1 @@
+FROM office-registry-vpc.cn-hongkong.cr.aliyuncs.com/base/docker:20.10.23-dind-alpine3.17
